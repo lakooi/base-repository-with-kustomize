@@ -17,11 +17,3 @@ spec:
           image: ghcr.io/aalto-grades/aalto-grades-frontend:main
           ports:
             - containerPort: 80
-      service:
-        type: NodePort
-        ports:
-        - name: http
-          port: 80
-          targetPort: 80
-        selector:
-          app: aalto-grades-frontend
